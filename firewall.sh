@@ -73,7 +73,7 @@ err_missing () {
 #   run, "present") The directory is present when the script is first
 #   run, "absent") The directory is absent from the machine when the
 #   script is first run.
-ETC_IPTABLES_DIR="absent"
+ETC_IPTABLES_DIR=""
 WHICH=$(which which) || err_missing which
 ID=$($WHICH id) || err_missing id
 BASENAME=$($WHICH basename) || err_missing basename
