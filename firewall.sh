@@ -203,9 +203,9 @@ Wants=network-pre.target
 
 [Service]
 Type=oneshot
-ExecStart=$SH -c "${COMMAND}-restore < /etc/iptables/rules.v$1"
-ExecReload=$SH -c "${COMMAND}-restore < /etc/iptables/rules.v$1"
-ExecStop=$SH -c "${COMMAND}-restore < /etc/iptables/empty.v$1"
+ExecStart=$SH -c "${COMMAND}-restore -w < /etc/iptables/rules.v$1"
+ExecReload=$SH -c "${COMMAND}-restore -w < /etc/iptables/rules.v$1"
+ExecStop=$SH -c "${COMMAND}-restore -w < /etc/iptables/empty.v$1"
 RemainAfterExit=yes
 
 [Install]
