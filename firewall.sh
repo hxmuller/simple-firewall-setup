@@ -10,7 +10,7 @@
 # ip6tables.
 #
 # The script does not assume /etc/iptables was created, therefore it
-# will not remove the drectory with the 'remove' parameter.
+# will not remove the directory with the 'remove' parameter.
 
 # Trap TERM signal from abort function, so we can exit the main script
 # from subprocesses.
